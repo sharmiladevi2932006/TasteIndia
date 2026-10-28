@@ -37,4 +37,12 @@ class MealMappingTest {
         )
         assertEquals(emptySet<String>(), intersectMealIds(emptyList()))
     }
+
+    @Test
+    fun usesFixturesWhenLiveCollectionIsEmpty() {
+        val fixture = Meal(id = "fixture-1", name = "Sample recipe", thumbnail = "")
+
+        assertEquals(listOf(fixture), mealsOrFixtures(emptyList(), listOf(fixture)))
+        assertEquals(listOf(fixture), mealsOrFixtures(listOf(fixture), emptyList()))
+    }
 }

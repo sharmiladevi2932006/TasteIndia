@@ -35,7 +35,10 @@ class MealRepository(
 
     override suspend fun indianMeals(): List<Meal> = withContext(Dispatchers.IO) {
         try {
-            checked(api.indianMeals()).meals.orEmpty().map(MealDto::toDomain)
+            val liveMeals = checked(api.indianMeals()).meals.orEmpty().map(MealDto::toDomain)
+            val meals = mealsOrFixtures(liveMeals, readFixture("indian_meals.json"))
+            if (meals.isNotEmpty()) return@withContext meals
+            throw IOException("TheMealDB returned no Indian recipes and no sample recipes are available.")
         } catch (cancelled: CancellationException) {
             throw cancelled
         } catch (error: Exception) {
@@ -143,3 +146,6 @@ class MealRepository(
 
 fun intersectMealIds(idSets: List<Set<String>>): Set<String> =
     idSets.reduceOrNull { result, next -> result intersect next }.orEmpty()
+
+fun mealsOrFixtures(liveMeals: List<Meal>, fixtures: List<Meal>): List<Meal> =
+    liveMeals.ifEmpty { fixtures }
