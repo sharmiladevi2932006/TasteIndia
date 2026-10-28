@@ -1,0 +1,25 @@
+{
+  "meals": [
+    {
+      "idMeal": "fixture-chana-masala",
+      "strMeal": "Chana Masala",
+      "strMealThumb": "",
+      "strCategory": "Vegetarian",
+      "strArea": "Indian"
+    },
+    {
+      "idMeal": "fixture-paneer-curry",
+      "strMeal": "Paneer Curry",
+      "strMealThumb": "",
+      "strCategory": "Vegetarian",
+      "strArea": "Indian"
+    },
+    {
+      "idMeal": "fixture-vegetable-biryani",
+      "strMeal": "Vegetable Biryani",
+      "strMealThumb": "",
+      "strCategory": "Vegetarian",
+      "strArea": "Indian"
+    }
+  ]
+}

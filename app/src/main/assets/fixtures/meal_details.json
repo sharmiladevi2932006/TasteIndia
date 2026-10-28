@@ -1,0 +1,51 @@
+{
+  "meals": [
+    {
+      "idMeal": "fixture-chana-masala",
+      "strMeal": "Chana Masala",
+      "strMealThumb": "",
+      "strCategory": "Vegetarian",
+      "strArea": "Indian",
+      "strInstructions": "Offline preview fixture. Reconnect and retry to load the complete recipe from TheMealDB.",
+      "strIngredient1": "Chickpeas",
+      "strMeasure1": "2 cups",
+      "strIngredient2": "Tomato",
+      "strMeasure2": "2, chopped",
+      "strIngredient3": "Onion",
+      "strMeasure3": "1, chopped",
+      "strIngredient4": "Garam masala",
+      "strMeasure4": "1 tsp",
+      "strTags": "vegetarian,offline sample"
+    },
+    {
+      "idMeal": "fixture-paneer-curry",
+      "strMeal": "Paneer Curry",
+      "strMealThumb": "",
+      "strCategory": "Vegetarian",
+      "strArea": "Indian",
+      "strInstructions": "Offline preview fixture. Reconnect and retry to load the complete recipe from TheMealDB.",
+      "strIngredient1": "Paneer",
+      "strMeasure1": "250 g",
+      "strIngredient2": "Tomato",
+      "strMeasure2": "2, chopped",
+      "strIngredient3": "Cream",
+      "strMeasure3": "1/4 cup",
+      "strTags": "vegetarian,offline sample"
+    },
+    {
+      "idMeal": "fixture-vegetable-biryani",
+      "strMeal": "Vegetable Biryani",
+      "strMealThumb": "",
+      "strCategory": "Vegetarian",
+      "strArea": "Indian",
+      "strInstructions": "Offline preview fixture. Reconnect and retry to load the complete recipe from TheMealDB.",
+      "strIngredient1": "Basmati rice",
+      "strMeasure1": "2 cups",
+      "strIngredient2": "Mixed vegetables",
+      "strMeasure2": "2 cups",
+      "strIngredient3": "Biryani masala",
+      "strMeasure3": "2 tsp",
+      "strTags": "vegetarian,offline sample"
+    }
+  ]
+}
